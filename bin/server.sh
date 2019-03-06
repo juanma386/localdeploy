@@ -4,7 +4,7 @@ echo '
 ##
 ## @author      Villalba Juan Manuel Pedro <https://github.com/juanma386>
 
-# @Version:     0.0.1
+# @Version:     0.0.2
 # @Estado:      Alpha
 # @Destino:     Deploy Server Php Linux
 # @Date:        05:41pm 14-09-2017
@@ -19,10 +19,10 @@ file=./testing.server.log
 if [ ! -e "$file" ]; then
     echo "File does not exist"
     echo "Create File inicializated Deploy"." [ "$_hoy" ]"
-    echo "Create File inicializated Deploy"." [ "$_hoy" ]" > testing.server.log
+    echo "Create File inicializated Deploy".	" [ "$_hoy" ]" > testing.server.log
 else
     echo "Checking file is exist deployed again"." [ "$_hoy" ]"
-    echo "Deployed again executed "." [ "$_hoy" ]" >> testing.server.log
+    echo "Deployed again executed OK "."  [ "$_hoy" ]" >> testing.server.log
 fi
 
 ADDR_PORT=${1:-127.0.0.1:8000}
